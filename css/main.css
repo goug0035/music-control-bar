@@ -23,6 +23,8 @@ body {
 }
 
 .music-bar {
+  position: relative;
+
   min-height: 50px;
   padding-top: 6px;
   background-image: linear-gradient(to bottom, #e2e2e2, #ccc);
@@ -31,26 +33,46 @@ body {
 }
 
 .song {
+  position: absolute;
+  left: 35px;
+  right: 35px;
+
   font-size: 1rem;
   font-weight: normal;
   margin: 0;
 }
 
 .band {
+  position: absolute;
+  left: 35px;
+  right: 35px;
+  top: 1.4rem;
+
   font-size: .8rem;
   margin: 0;
   color: #666;
 }
 
 .album {
-
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50px;
+  z-index: 100;
 }
 
 .time {
-
+  position: absolute;
+  bottom: 0;
+  width: 100%;
 }
 
 .time-bar {
+  position: relative;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+
   height: 8px;
   margin: 0;
   padding: 0;
@@ -76,30 +98,43 @@ body {
 /* END DON’T TOUCH ZONE */
 
 .time-lapsed {
+  position: absolute;
+  left: 3.5rem;
+  bottom: .7rem;
+
   font-size: .7rem;
 }
 
 .time-total {
+  position: absolute;
+  right: .3rem;
+  bottom: .7rem;
+
   font-size: .7rem;
 }
 
 .controls {
+  position: relative;
   margin: 0;
   padding: 0;
   color: #666;
-  font-size: 1.8rem;
+  font-size: 1.2rem;
   line-height: 16px;
   list-style-type: none;
 }
 
 .control-shuffle {
-
+  position: absolute;
+  left: 3.5rem;
+  top: 0;
 }
 
 .control-list {
-
+  position: absolute;
+  right: .3rem;
 }
 
 .control-heart {
-
+  position: absolute;
+  right: 1.5rem;
 }
